@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>Clothing| E-commerce</title>
+  <link rel="stylesheet" href="css/e-commerce.css">
+  <link rel="stylesheet" href="mobileports/indexview.css">
+</head>
+
+<body id="darkToggle">
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="" width="125px">
+        </div>
+        <nav>
+          <ul id="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="template/prdouct.html">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="">Account</a></li>
+          </ul>
+        </nav>
+        <img src="../images/cart.png" alt="" width="30px" height="30px" style="margin-top:1vw" class="shopping">
+        <!-- DARK MODE  -->
+        <div class="dark">
+          <i class="ri-sun-line" onclick="toggleDarkMode()"></i>
+        </div>
+        <div class="menu-icon">
+          <i class="ri-menu-line" class="menu-icon" onclick="menutoogle()"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <h1>Give Your<span style="color: red;">Self A New Style!</span></h1>
+          <p>If you love something, wear it all the time... Find things that suit you. That's how you look extraordinary
+          </p>
+          <a href="" class="btn">Explore now &#8594;</a>
+        </div>
+        <div class="col-2">
+          <img src="images/image1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------  FEATURES CATEGORIES  ------------------------------------------------>
+
+  <div class="categories">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-3">
+          <img src="images/category-1.jpg" alt="">
+        </div>
+        <div class="col-3">
+          <img src="images/category-2.jpg" alt="">
+        </div>
+        <div class="col-3">
+          <img src="images/category-3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------  FEATURES PRODUCTS  ------------------------------------------------>
+  <div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+      <div class="col-4">
+        <img src="images/product-1.jpg" alt="">
+        <h4 class="text-black">Blue Shorts</h4>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <p class="text-black">$50.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-2.jpg" alt="">
+        <h4 class="text-head">Heels</h4>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        </div>
+        <p class="text-black">$130.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-3.jpg" alt="">
+        <h4 class="text-head">Hat</h4>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <p class="text-black">$120.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-4.jpg" alt="">
+        <h4 class="text-head">Y-Back Suspenders</h4>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        </div>
+        <p class="text-black">$100.00</p>
+      </div>
+    </div>
+    <!------------------------------------  LATEST PRODUCTS  ------------------------------------------------>
+
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+      <div class="col-4">
+        <img src="images/product-5.jpg" alt="">
+        <h4 class="text-head">White T-shirt</h4>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <p class="text-black">$90.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-6.jpg" alt="">
+        <h4 class="text-head">Laundered Pant</h4>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        </div>
+        <p class="text-black">$50.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-7.jpg" alt="">
+        <h4 class="text-head">Sleeveless Dress</h4>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <p class="text-black">$30.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-8.jpg" alt="">
+        <h4 class="text-head">Watch</h4>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <p class="text-black">$10.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-9.jpg" alt="">
+        <h4 class="text-head">Analog Watch</h4>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <p class="text-black">$20.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-10.jpg" alt="">
+        <h4 class="text-head">Branded Shoes</h4>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        </div>
+        <p class="text-black">$150.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-11.jpg" alt="">
+        <h4 class="text-head">Sports Wear</h4>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <p class="text-black">$60.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-12.jpg" alt="">
+        <h4 class="text-head">Sweaters</h4>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <p class="text-black">$110.00</p>
+      </div>
+    </div>
+  </div>
+
+  <!----------------------------------- OFFERS  ------------------------->
+  <div class="offer">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-2">
+          <img src="images/exclusive.png" alt="" class="offer-img">
+        </div>
+        <div class="col-2">
+          <p>Exclusively Available on Fashion </p>
+          <h1>Sale is on!</h1>
+          <p class="small">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, aliquam saepe eius sit animi
+            blanditiis
+            assumenda libero modi similique itaque earum odit culpa. Minus perspiciatis magnam dolores! Molestias dicta
+            quaerat modi ab, repellat vero!</p>
+          <br>
+          <a href="" class="btn">Buy Now &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------ TESIMONIAL ----------------------------- -->
+
+  <div class="testimonial">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-3">
+          <i class="fa fa-quote-left" aria-hidden="true"></i>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique a distinctio culpa
+            alias consequuntur,exercitationem blanditiis qui architecto unde neque, accusantium cumque
+            incidunt temporibus ex ipsa atque doloremque, reiciendis consequatur aspernatur doloribus
+            officia officiis!</p>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <img src="images/user-1.png" alt="">
+          <h3>Jacob </h3>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-quote-left" aria-hidden="true"></i>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique a distinctio culpa
+            alias consequuntur,exercitationem blanditiis qui architecto unde neque, accusantium cumque
+            incidunt temporibus ex ipsa atque doloremque, reiciendis consequatur aspernatur doloribus
+            officia officiis!</p>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <img src="images/user-2.png" alt="">
+          <h3>Harry</h3>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-quote-left" aria-hidden="true"></i>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique a distinctio culpa
+            alias consequuntur,exercitationem blanditiis qui architecto unde neque, accusantium cumque
+            incidunt temporibus ex ipsa atque doloremque, reiciendis consequatur aspernatur doloribus
+            officia officiis!</p>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <img src="images/user-3.png" alt="">
+          <h3>Michlle </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------------  BRANDS  -------------------------->
+  <div class="brands">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-5">
+          <img src="images/logo-mango.png" alt="">
+        </div>
+        <div class="col-5">
+          <img src="images/logo-reebok.jpg" alt="">
+        </div>
+        <div class="col-5">
+          <img src="images/logo-star.png" alt="">
+        </div>
+        <div class="col-5">
+          <img src="images/logo-asos.png" alt="">
+        </div>
+        <div class="col-5">
+          <img src="images/logo-zara.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!----------- FOOTER  --------------------------------->
+
+  <div class="footer" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p class="text-p-footer">Download App for Android and ios mobile phone.</p>
+          <div class="app-logo">
+            <img src="images/play-store.png" alt="">
+            <img src="images/app-store.png" alt="">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-white.png" alt="">
+          <p class="text-p-footer">Live the Fashion with FASHION</p>
+        </div>
+        <!-- <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affilate</li>
+          </ul>
+        </div> -->
+        <div class="footer-col-4">
+          <h3>Follow Us On</h3>
+          <ul class="text-p">
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Intagram</a></li>
+            <li><a href="">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> © 2024 Fashion. All rights reserved.</p>
+    </div>
+    <div class="up-btn" onclick="scrollTotop() ">
+      <img src="images/upbtn.gif" alt="">
+    </div>
+  </div>
+
+
+
+</body>
+<script src="js/toogle.js"></script>
+<script src="js/darkmode.js"></script>
+
+</html>

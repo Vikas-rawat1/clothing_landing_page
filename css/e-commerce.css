@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  transition: all 0.8s;
+}
+/* default color of the body tag in the mode(light or dark which is default)   */
+body:not(.dark-mode) .text-p,
+body:not(.dark-mode) .text-head,
+body:not(.dark-mode) .text-black,
+body:not(.dark-mode) i,
+body:not(.dark-mode) h4 {
+  color: #000;
+}
+
+/* text color when it change the theme  */
+body.dark-mode .section-go,
+body.dark-mode .text-head,
+body.dark-mode .text-p-footer,
+p,
+i,
+h4 {
+  color: #fff;
+}
+.text-black {
+  color: white;
+}
+::selection {
+  color: red;
+}
+.header {
+  background: radial-gradient(#fff, #918e8e);
+}
+.container {
+  margin: auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+/* NAVBAR SECTION  */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1vw;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 1vw;
+  position: relative;
+  text-decoration: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5vw;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 0.2vw;
+  background-color: rgb(240 85 39);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  transition: width 0.8s ease-out;
+}
+nav ul li a:hover::after {
+  width: 100%;
+  box-shadow: 0 0 10vw 0 rgb(0, 234, 179) inset;
+}
+.dark {
+  font-size: 2vw;
+  margin-left: 2vw;
+}
+p {
+  color: #fff;
+  margin: 1vw 1vw;
+}
+
+/* ROW CLASS */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.col-2 {
+  flex-basis: 50%;
+  width: 50%;
+}
+.col-2 img {
+  max-width: 100%;
+  padding: 2vw 0;
+  transition: all 0.8s;
+}
+.col-2 img:hover {
+  transform: scale(1.1);
+}
+.col-2 h1 {
+  font-size: 4vw;
+  /* line-height: 6vw; */
+  margin: 1vw 1vw;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff523b;
+  color: white;
+  padding: 1vw 1vw;
+  margin: 1vw 1vw;
+  border-radius: 30px;
+  transition: background 0.5s;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #563434;
+}
+.header .row {
+  margin-top: 2vw;
+}
+
+/*------------------------------------  FEATURES CATEGORIES  ----------------------------------------------- */
+
+.categories {
+  margin: 2vw 0;
+}
+.small-container {
+  max-width: 80%;
+  margin: auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  color: white;
+}
+
+.col-3 {
+  flex-basis: 30%;
+  min-width: 25%;
+  margin-bottom: 2vw;
+}
+.col-3 img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/*------------------------------------  FEATURES PRODUCTS  ----------------------------------------------- */
+.col-4 {
+  flex-basis: 25%;
+  padding: 1vw;
+  min-width: 20%;
+  margin-bottom: 2vw;
+}
+.col-4 img {
+  width: 100%;
+  border-radius: 5px;
+}
+.title {
+  text-align: center;
+  margin: 0 auto 1vw;
+  position: relative;
+  line-height: 4vw;
+  color: #555;
+}
+.title::after {
+  content: "";
+  background: #ff523b;
+  width: 20%;
+  height: 0.3vw;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h4 {
+  color: #555;
+  font-weight: normal;
+}
+.col-4 p {
+  font-size: 1vw;
+}
+
+.rating .fa {
+  color: #ff523b;
+}
+
+/* OFFERS */
+.offer {
+  background: radial-gradient(#e5e0e0, #918e8e);
+  margin-top: 2vw;
+  padding: 1vw 0;
+}
+.col-2 .offer-img {
+  padding: 2vw;
+}
+.small {
+  color: #555;
+  margin: 2vw 1vw;
+  color: white;
+}
+
+/*------------------------------------ TESTIOMONIALS ----------------------------------------------- */
+.testimonial {
+  padding-top: 5vw;
+}
+.testimonial .col-3 {
+  text-align: center;
+  padding: 2vw 3vw;
+  box-shadow: 1vw 1vw 1vw 0vw #9e8886;
+  transition: transform 0.5s;
+  border: 2px solid #f5d6d6;
+}
+.testimonial .col-3 img {
+  width: 20%;
+  margin-top: 1vw;
+  border-radius: 50%;
+}
+.testimonial .col-3:hover {
+  cursor: pointer;
+  transform: translateX(10px);
+}
+.fa.fa-quote-left {
+  font-size: 1vw;
+  color: #ff523b;
+}
+.col-3 p {
+  font-size: 1vw;
+  margin: 1vw 0;
+  color: #777;
+}
+
+.testimonial .col-3 h3 {
+  font-weight: 600;
+  color: #555;
+  font-size: 1vw;
+}
+
+/* BRANDS */
+
+.brands {
+  margin: 2vw auto;
+}
+
+.col-5 {
+  width: 10%;
+}
+
+.col-5 img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+.col-5 img:hover {
+  cursor: pointer;
+  filter: grayscale(0);
+}
+
+/* FOOTER */
+
+.footer {
+  background: #000;
+  color: #8a8a8a;
+  font-size: 1vw;
+  padding: 2vw 0 1vw;
+}
+/* .footer p {
+  color: #8a8a8a;
+} */
+.footer h3 {
+  color: #fff;
+  margin-bottom: 1vw;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  max-width: 20%;
+  margin-bottom: 2vw;
+}
+.footer-col-1 {
+  flex-basis: 30%;
+}
+.footer-col-2 {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-col-2 img {
+  width: 40%;
+  margin-bottom: 2vw;
+}
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.app-logo {
+  margin-top: 2vw;
+}
+
+.app-logo img {
+  width: 40%;
+}
+.footer hr {
+  border: none;
+  background-color: #b5b5b5;
+  height: 0.1vw;
+  margin: 1vw 0;
+}
+.copyright {
+  text-align: center;
+}
+
+.menu-icon {
+  width: 1vw;
+  margin-left: 2vw;
+  display: none;
+}
+.menu-icon i {
+  font-size: 10vw;
+}
+
+/* ALL PRODUCTS  */
+.row-2 {
+  justify-content: space-between;
+  margin: 2vw auto 1vw;
+}
+
+select {
+  border: 1px solid #ff523b;
+  padding: 1vw;
+}
+
+select:focus {
+  outline: none;
+}
+
+.page-btn {
+  margin: 0 auto 2vw;
+}
+.page-btn span {
+  display: inline-block;
+  border: 1px solid #ff523b;
+  margin-left: 1vw;
+  width: 5%;
+  height: 2vw;
+  text-align: center;
+  line-height: 2vw;
+}
+.page-btn span:hover {
+  /* cursor: pointer; */
+  background: #ff523b;
+  color: white;
+}
+
+.up-btn {
+  background-color: black;
+  display: flex;
+  float: right;
+  width: 100%;
+  position: relative;
+}
+.up-btn img {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  height: 4vw;
+}
+.up-btn:hover {
+  cursor: pointer;
+}
